@@ -47,3 +47,47 @@ Exemplo:
 - Tipo: `Category`
 - Propriedade: `BookCategory`
 - Parâmetro: `category`
+
+
+## Missão 2 — Testando Objetos
+
+### Objetivo
+
+Validar se a entidade `Book` nasce em um estado válido ao ser instanciada.
+
+### Conceitos aprendidos
+
+- Instanciação de objetos
+- Uso do construtor
+- Criação de objetos no `Program.cs`
+- Acesso às propriedades de um objeto
+- Validação de regras de negócio
+
+### Dificuldades
+
+- Entender como visualizar um objeto no terminal
+- Compreender que não existe, neste momento dos estudos, um comando que exiba automaticamente todas as propriedades de um objeto criado por mim
+
+### Checklist
+
+- [x] Criar um objeto `Book`
+- [x] Instanciar utilizando o construtor
+- [x] Exibir propriedades no terminal
+- [x] Validar o uso do `enum`
+- [x] Confirmar que `QuantityAvailable` recebe o mesmo valor de `QuantityTotal`
+
+### Descoberta: Exibição de objetos
+
+Durante os testes da entidade `Book`, imaginei que existisse um comando próprio do C# para exibir automaticamente todas as informações de um objeto criado por mim.
+
+Minha dúvida não era como acessar uma propriedade específica, pois eu já sabia utilizar a sintaxe `objeto.Propriedade`.
+
+A dúvida era se existia uma forma de visualizar o objeto inteiro de uma única vez.
+
+O que aprendi foi que, neste momento dos meus estudos, sou eu quem escolho quais propriedades serão exibidas no terminal. Mais adiante, estudarei formas de definir como um objeto pode ser representado quando for exibido.
+
+### Validação da regra de negócio
+
+Criei um objeto `Book` e verifiquei, através do terminal, que a propriedade `QuantityAvailable` recebeu automaticamente o mesmo valor de `QuantityTotal`.
+
+Esse teste confirmou que a regra implementada no construtor está funcionando corretamente e que o objeto nasce em um estado válido.
